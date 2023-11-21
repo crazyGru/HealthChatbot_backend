@@ -1,10 +1,4 @@
 from pydantic import BaseModel
+class MessageSchema(BaseModel):
+    message:str
 
-class MessageRequestSchema(BaseModel):
-    user : str
-    locale : str
-    type : str
-    text : str
-
-class CreateRequestSchema(BaseModel):
-    user:str
